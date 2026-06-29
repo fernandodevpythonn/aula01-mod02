@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML</title>
+</head>
+<!-- 
+     Cabeçalho do site
+ -->
+<body>
+<!--
+     Conteúdo principal
+ -->
+    <h1>HTML com Flask</h1>
+    <p>Escolha um grupo de tags para estudar:</p>
+    <!-- comentário em HTML -->
+    <ul>
+        <li><a href="/estrutura">Estrutura HTML</a></li>
+        <li><a href="/titulos_textos">Títulos e Textos</a></li>
+        <li><a href="/semantica">Semântica</a></li>
+        <li><a href="/links_imagens">Links e Imagens</a></li>
+        <li><a href="{{ url_for('formulario') }}">Formulário</a></li>
+       
+    </ul>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do Formulário</title>
+</head>
+<body>
+    <h1>Resultado do Formulário</h1>
+
+    <p>Nome: {{ nome }}</p>
+    <p>Email: {{ email }}</p>
+
+    {% if mensagem %}
+        <p>Mensagem: {{ mensagem }}</p>
+    {% endif %}
+
+    {% if curso %}
+        <p>Curso: {{ curso }}</p>
+    {% endif %}
+
+    {% if nivel_conhecimento %}
+        <p>Nivel de conhecimento: {{ nivel_conhecimento }}</p>
+    {% endif %}
+
+    {% if hobbies %}
+        <p>Hobbies: {{ hobbies|join(', ') }}</p>
+    {% endif %}
+
+    <br>
+    <a href="{{ url_for('formulario') }}">Voltar para o formulário</a>
+</body>
+</html>
