@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Mídia e Canvas</title>
+</head>
+<body>
+
+    <h1>Elementos de Mídia e Canvas</h1>
+
+    <h2>Exemplo de Imagem</h2>
+    <img src="{{ url_for('static', filename='imagens/python.gif') }}" alt="Python Logo" width="200">
+    <br>
+
+
+    <video width="320" height="240" controls>
+    <source src="{{ url_for('static', filename='videos/GitHub Education.mp4') }}" type="video/mp4">
+    </video>
+    <br><br>
+
+
+    <audio controls>
+    <source src="{{ url_for('static', filename='audios/mixkit-beautiful-dream-493.mp3') }}" type="audio/mpeg">
+    </audio>
+
+
+    <br>
+    <a href="/">Voltar</a>
+</body>
+</html>

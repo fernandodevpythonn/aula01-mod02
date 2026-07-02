@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+
+    <h1>Formulários HTML com Flask</h1>
+
+    <p>Aprenda a criar formulários em HTML e capturar dados no Flask.</p>
+
+    <h2>Formulário Básico</h2>
+    <p>Um formulário simples com nome e email:</p>
+    <pre>
+&lt;form action="/resultado" method="POST"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" id="nome" name="nome" required&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+    </pre>
+
+    <h2>Formulário Avançado</h2>
+    <p>Inclui textarea, select, radio e checkbox:</p>
+    <pre>
+&lt;label for="mensagem"&gt;Mensagem:&lt;/label&gt;
+&lt;textarea id="mensagem" name="mensagem" rows="4" cols="50"&gt;&lt;/textarea&gt;
+
+&lt;label for="curso"&gt;Curso:&lt;/label&gt;
+&lt;select id="curso" name="curso"&gt;
+    &lt;option value="python"&gt;Python&lt;/option&gt;
+    &lt;option value="html"&gt;HTML&lt;/option&gt;
+    &lt;option value="flask"&gt;Flask&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;label&gt;Sexo:&lt;/label&gt;
+&lt;input type="radio" id="masc" name="sexo" value="masculino"&gt;&lt;label for="masc"&gt;Masculino&lt;/label&gt;
+&lt;input type="radio" id="fem" name="sexo" value="feminino"&gt;&lt;label for="fem"&gt;Feminino&lt;/label&gt;
+
+&lt;label&gt;Hobbies:&lt;/label&gt;
+&lt;input type="checkbox" id="ler" name="hobbies" value="ler"&gt;&lt;label for="ler"&gt;Ler&lt;/label&gt;
+&lt;input type="checkbox" id="jogar" name="hobbies" value="jogar"&gt;&lt;label for="jogar"&gt;Jogar&lt;/label&gt;
+&lt;input type="checkbox" id="correr" name="hobbies" value="correr"&gt;&lt;label for="correr"&gt;Correr&lt;/label&gt;
+    </pre>
+
+    <h2>Formulário Interativo Completo</h2>
+    <form action="/resultado_avancado" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso" required>
+            <option value="python">Python</option>
+            <option value="html">HTML</option>
+            <option value="flask">Flask</option>
+        </select>
+        <br><br>
+
+   
+        <input type="radio" id="basico" name="nivel_conhecimento" value="basico" required>
+        <label for="basico">Básico</label>
+
+        <input type="radio" id="intermediario" name="nivel_conhecimento" value="intermediario">
+        <label for="intermediario">Intermediário</label>
+
+        <input type="radio" id="avancado" name="nivel_conhecimento" value="avancado">
+        <label for="avancado">Avançado</label>
+
+        
+        <p>Hobbies:</p>
+        <input type="checkbox" id="ler" name="hobbies" value="ler" >
+        <label for="ler">Ler</label>
+        <input type="checkbox" id="jogar" name="hobbies" value="jogar">
+        <label for="jogar">Jogar</label>
+        <input type="checkbox" id="correr" name="hobbies" value="correr">
+        <label for="correr">Correr</label>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Explicação dos campos</h2>
+    <ul>
+        <li><code>&lt;label&gt;</code>: define o texto explicativo do campo.</li>
+        <li><code>&lt;input type="text"&gt;</code>: campo para texto simples.</li>
+        <li><code>&lt;input type="email"&gt;</code>: campo que valida email.</li>
+        <li><code>&lt;textarea&gt;</code>: área de texto maior.</li>
+        <li><code>&lt;select&gt;</code> com <code>&lt;option&gt;</code>: menu suspenso.</li>
+        <li><code>&lt;input type="radio"&gt;</code>: escolha única.</li>
+        <li><code>&lt;input type="checkbox"&gt;</code>: múltipla escolha.</li>
+        <li><code>required</code>: torna o campo obrigatório.</li>
+        <li><code>&lt;input type="submit"&gt;</code>: botão para enviar o formulário.</li>
+    </ul>
+
+    
+    <br>
+    <a href="/">Voltar para a página inicial</a>
+
+</body>
+</html>

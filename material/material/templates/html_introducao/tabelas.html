@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+
+    <h1>Tabelas</h1>
+
+    <!-- Tabela simples -->
+    <h2>Tabela Simples</h2>
+    <table border="1"> <!-- tabela com borda -->
+        <tr> <!-- Linha da tabela -->
+            <th>Nome</th> <!-- Cabeçalho da coluna -->
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>João</td> <!-- Célula de dados -->
+            <td>joao@email.com</td>
+        </tr>
+    </table>
+
+    <!-- Tabela com thead, tbody e tfoot -->
+    <h2>Tabela Completa com thead, tbody e tfoot</h2>
+    <table border="1">
+        <thead> <!-- Cabeçalho da tabela -->
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody> <!-- Corpo da tabela -->
+            <tr>
+                <td>Teclado</td>
+                <td>R$ 80</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>R$ 50</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- Rodapé da tabela -->
+            <tr>
+                <th>Total</th>
+                <th>R$ 130</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- colspan -->
+    <h2>Exemplo de colspan</h2>
+    <table border="1">
+        <tr>
+            <th colspan="2">Informações Gerais</th> <!-- Une 2 colunas -->
+        </tr>
+        <tr>
+            <td>Nome</td>
+            <td>Maria</td>
+        </tr>
+    </table>
+
+    <!-- rowspan -->
+    <h2>Exemplo de rowspan</h2>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Categoria</th> <!-- Une 2 linhas -->
+            <td>Eletrônicos</td>
+        </tr>
+        <tr>
+            <td>Computadores</td>
+        </tr>
+    </table>
+
+    <br>
+    <a href="/">Voltar</a>
+
+</body>
+</html>
