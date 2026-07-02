@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="../../static/login.css">
 </head>
 <body>
     <header>
@@ -11,11 +12,23 @@
     </header>
     <main>
         <section>
-            <form action="{{ url_for('entrar') }}" method="POST">
-
-                
+            {% if erro%}
+              <p style="color: red; background-color: white; padding: 5px; text-align: center; margin-bottom: 5px;">{{erro}}</p>
+            {% endif %}
+            <form action="{{ url_for('entrar')}}" method="POST">
+              <p>
+               <label for="nome">Nome: </label>
+              <input type="text" name="nome" id="nome">
+              </p>
+              <p>
+                <label for="email">Email: </label>
+              <input type="email" name="email" id="nome">
+              </p>
+             
+              <br>
+              <input type="submit" value="entrar">
             </form>
-
+            <p><a href="/">Página inicial</a></p>
         </section>
     </main>
 </body>

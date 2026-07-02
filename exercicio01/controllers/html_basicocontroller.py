@@ -4,7 +4,7 @@ from controllers.basecontroller import BaseController
 class htmlbasicocontroller(BaseController):
     def __init__(self,app):
         self.rotas = [
-            ('/','home', self.proteger_rota(self.pagina_inicial))
+            ('/','home',self.pagina_inicial)
         ]
         super().__init__(app)
         
