@@ -26,4 +26,4 @@ class BaseController:
 
     def proteger_rota(self,funcao):
         return login_required(funcao)
-    #teste
+    #tes
