@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica Avançada e Acessibilidade</title>
+</head>
+<body>
+
+    <!-- Cabeçalho principal -->
+    <header>
+        <h1>Senac Tech</h1>
+        <p>Aprenda HTML semântico e boas práticas de acessibilidade e SEO</p>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="/">Página inicial</a> |
+        <a href="/semantica">Semântica</a> |
+        <a href="/semantica_avancada">Semântica Avançada</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Artigo principal -->
+        <article>
+            <h2>Nova Funcionalidade do HTML5 <mark>Canvas</mark></h2>
+            <p>O elemento <strong>canvas</strong> permite criar gráficos e desenhos diretamente no navegador.</p>
+            <p>Publicado em <time datetime="2026-02-05">5 de fevereiro de 2026</time></p>
+
+            <!-- Imagem ilustrativa com figcaption -->
+            <figure>
+                <img src="{{ url_for('static', filename='imagens/python.gif') }}" alt="Logo Python">
+                <figcaption>Figura 1: Logo do Python</figcaption>
+            </figure>
+
+            <!-- Detalhes adicionais com details/summary -->
+            <details>
+                <summary>Mais informações sobre Canvas</summary>
+                <p>O elemento canvas pode ser manipulado via JavaScript para criar gráficos dinâmicos, jogos e visualizações interativas.</p>
+            </details>
+        </article>
+
+        <!-- Seção secundária -->
+        <aside>
+            <h3>Dicas de Acessibilidade</h3>
+            <ul>
+                <li>Use <strong>alt</strong> em imagens</li>
+                <li>Use <code>&lt;label&gt;</code> para inputs</li>
+                <li>Organize títulos <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> hierarquicamente</li>
+                <li>Forneça datas em <code>&lt;time&gt;</code></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2026 — Todos os direitos reservados | Senac Tech</p>
+    </footer>
+
+    <br>
+    <a href="/">Voltar para a página inicial</a>
+
+</body>
+</html>

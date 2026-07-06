@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Imagens</title>
+</head>
+<body>
+
+    <h1>Links e Imagens</h1>
+
+    <p>Criar links e inserir imagens no HTML com Flask.</p>
+
+    <h2>Links (âncoras)</h2>
+    <p>Um link é criado com a tag <code>&lt;a&gt;</code> e o atributo <code>href</code>:</p>
+    <pre>
+&lt;a href="https://www.senacrs.com.br/home" target="_blank" rel="noopener"&gt;Visitar Senac&lt;/a&gt;
+    </pre>
+    <p>Isso cria um link clicável que abre em nova aba para 
+       <a href="https://www.senacrs.com.br/home" target="_blank" rel="noopener">www.senacrs.com.br</a>.
+    </p>
+
+    <h3>Exemplos de diferentes tipos de target:</h3>
+    <ul>
+        <li><a href="https://www.senacrs.com.br/home" target="_self">_self - abre na mesma aba</a></li>
+        <li><a href="https://www.senacrs.com.br/home" target="_blank" rel="noopener">_blank - abre em nova aba</a></li>
+        <li><a href="https://www.senacrs.com.br/home" target="_parent">_parent - abre no frame pai</a></li>
+        <li><a href="https://www.senacrs.com.br/home" target="_top">_top - abre no documento inteiro</a></li>
+        <li><a href="https://www.senacrs.com.br/home" target="minha_aba">minha_aba - abre sempre na mesma aba nomeada</a></li>
+    </ul>
+
+    <h2>Imagens</h2>
+    <p>Uma imagem é inserida com a tag <code>&lt;img&gt;</code>:</p>
+    <img src="{{ url_for('static', filename='imagens/python.gif') }}" alt="Python Logo">
+    <p>O atributo <code>alt</code> fornece uma descrição acessível, e o <code>src</code> busca a imagem <strong>python.gif</strong> na pasta <code>static/imagens</code>.</p>
+
+    <h2>HTML</h2>
+    <p>HTML com link e imagem:</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Links e Imagens&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;a href="https://www.senacrs.com.br/home" target="_blank" rel="noopener"&gt;Visitar Senac&lt;/a&gt;
+    &lt;br&gt;
+    &lt;img src="{{ url_for('static', filename='imagens/python.gif') }}" alt="Python Logo"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <br>
+    <a href="/">Voltar para a página inicial</a>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte da página */
+    background-color: #f2f2f2;      /* Cor de fundo suave */
+    padding: 20px;                   /* Espaçamento interno da página */
+}
+
+
+h1 {
+    text-align: center;              /* Centraliza o título */
+    color: #2c3e50;                  /* Cor do título */
+    margin-bottom: 30px;             /* Espaço abaixo do título */
+}
+
+form {
+    background-color: #ffffff;       /* Fundo branco */
+    padding: 20px;                   /* Espaço interno */
+    border-radius: 10px;             /* Bordas arredondadas */
+    max-width: 600px;                /* Largura máxima */
+    margin: 0 auto;                  /* Centraliza horizontalmente */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve */
+}
+
+
+fieldset {
+    border: 2px solid #3498db;      /* Borda azul */
+    border-radius: 8px;              /* Bordas arredondadas */
+    padding: 15px;                   /* Espaçamento interno */
+    margin-bottom: 20px;             /* Espaço abaixo do fieldset */
+}
+
+legend {
+    font-weight: bold;               /* Negrito */
+    color: #2980b9;                  /* Azul escuro */
+    padding: 0 10px;                 /* Espaçamento horizontal */
+}
+
+
+label {
+    display: inline-block;           /* Para usar margem corretamente */
+    width: 150px;                    /* Largura fixa */
+    margin-bottom: 10px;             /* Espaço abaixo */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="color"],
+input[type="number"],
+input[type="range"],
+input[type="url"],
+input[list] {
+    padding: 8px;                    /* Espaço interno do campo */
+    border: 1px solid #ccc;          /* Borda cinza clara */
+    border-radius: 5px;              /* Bordas arredondadas */
+    width: 60%;                       /* Largura dos campos */
+    margin-bottom: 10px;             /* Espaço abaixo */
+}
+
+
+input[type="radio"] {
+    margin-right: 5px;               /* Espaço entre botão e label */
+}
+
+input[type="submit"] {
+    background-color: #3498db;       /* Cor de fundo azul */
+    color: #fff;                     /* Texto branco */
+    padding: 10px 20px;              /* Espaçamento interno */
+    border: none;                    /* Sem borda */
+    border-radius: 5px;              /* Bordas arredondadas */
+    cursor: pointer;                 /* Muda o cursor ao passar por cima */
+    font-size: 16px;                 /* Tamanho da fonte */
+}
+
+/* Efeito hover no botão */
+input[type="submit"]:hover {
+    background-color: #2980b9;       /* Azul mais escuro ao passar o mouse */
+}
+
+a {
+    color: #3498db;                  /* Azul */
+    text-decoration: none;           /* Sem sublinhado */
+}
+
+a:hover {
+    text-decoration: underline;      /* Sublinhado ao passar o mouse */
+}

@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;                /* Remove margens padrão */
+    padding: 0;               /* Remove padding padrão */
+    box-sizing: border-box;   /* Inclui padding e border no tamanho total */
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte principal */
+    font-size: 16px;          /* Tamanho base do texto */
+    line-height: 1.6;         /* Espaçamento entre linhas */
+    background-color: #f5f5f5; /* Cor de fundo */
+    color: #333;              /* Cor do texto */
+    padding: 20px;            /* Espaço interno da página */
+}
+
+
+header {
+    padding: 20px;             /* Espaço interno do header */
+    text-align: center;        /* Centraliza o texto */
+    background-color: #333;    /* Fundo escuro */
+    color: #fff;               /* Texto branco */
+    border-bottom: 2px solid #444; /* Linha decorativa inferior */
+}
+
+
+footer {
+    padding: 15px;             /* Espaço interno do footer */
+    text-align: center;        /* Centraliza o texto */
+    background-color: #333;    /* Fundo escuro */
+    color: #fff;               /* Texto branco */
+    border-top: 2px solid #444; /* Linha decorativa superior */
+    margin-top: 20px;          /* Espaço acima do footer */
+}
+
+
+
+a {
+    color: #2a7ae2;            /* Cor padrão dos links */
+    text-decoration: none;      /* Remove sublinhado */
+    transition: 0.3s;          /* Transição suave para hover */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+    color: #1a5bb8;             /* Cor muda ao passar o mouse */
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif; /* Fonte para títulos */
+    margin-bottom: 10px;      /* Espaço abaixo do título */
+    font-weight: 600;          /* Peso da fonte */
+}
+
+
+p {
+    line-height: 1.6;         /* Altura da linha */
+    margin: 10px 0;           /* Espaço acima e abaixo do parágrafo */
+    text-align: justify;       /* Justifica o texto  */
+}
+
+
+ul {
+    list-style-type: disc;    /* Tipo de marcador: bolinha */
+    margin-left: 20px;        /* Distância da margem */
+}
+
+
+ol {
+    list-style-type: decimal; /* Numeração */
+    margin-left: 20px;        /* Distância da margem */
+}
+
+
+table {
+    border-collapse: collapse; /* Une bordas das células */
+    width: 100%;               /* Ocupa toda a largura */
+    margin-bottom: 20px;       /* Espaço abaixo da tabela */
+}
+
+th, td {
+    border: 1px solid #333;    /* Borda das células */
+    padding: 8px;              /* Espaço interno das células */
+    text-align: left;          /* Alinhamento do texto */
+}
+
+th {
+    background-color: #444;    /* Fundo do cabeçalho */
+    color: #fff;               /* Texto do cabeçalho */
+}
+
+
+article {
+    background-color: #fff;    /* Fundo branco para artigos */
+    padding: 15px;             /* Espaço interno */
+    margin-bottom: 20px;       /* Espaço entre artigos */
+    border-radius: 5px;        /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve */
+}
+
+section {
+    margin-bottom: 20px;       /* Espaço entre seções */
+}
+
+aside {
+    background-color: #e0e0e0; /* Fundo cinza claro */
+    padding: 10px;             /* Espaço interno */
+    margin: 10px 0;            /* Espaço acima e abaixo */
+    border-left: 4px solid #2a7ae2; /* Borda decorativa */
+}
