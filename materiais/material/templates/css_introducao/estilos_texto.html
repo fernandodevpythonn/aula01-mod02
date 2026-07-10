@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades de Texto e Cor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos_texto.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Exemplos de CSS: Cor, Fonte, Texto e Gradientes</h1>
+    </header>
+
+    <main>
+        
+        <section class="demo-section">
+            <h2>Propriedades de Cor</h2>
+            <p class="cor1">Texto vermelho usando <code>color: red;</code></p>
+            <p class="cor2">Fundo azul usando <code>background-color: #3498db;</code></p>
+            <p class="cor3">Cor com transparência usando <code>rgba(46, 204, 113, 0.5);</code></p>
+            <p class="cor4">Cor usando HSL <code>hsl(200, 70%, 50%);</code></p>
+        </section>
+
+    
+        <section class="demo-section">
+            <h2>Propriedades de Fonte</h2>
+            <p class="fonte1">Fonte Arial, tamanho 16px, peso normal</p>
+            <p class="fonte2">Fonte Georgia, tamanho 24px, negrito, altura de linha 1.5</p>
+            <p class="fonte3">Fonte monospace, tamanho 18px, peso leve</p>
+        </section>
+
+    
+        <section class="demo-section">
+            <h2>Propriedades de Texto</h2>
+            <p class="texto1">Alinhamento central <code>text-align: center;</code></p>
+            <p class="texto2">Sublinhado <code>text-decoration: underline;</code></p>
+            <p class="texto3">Caixa alta <code>text-transform: uppercase;</code></p>
+            <p class="texto4">Espaçamento entre letras <code>letter-spacing: 5px;</code></p>
+        </section>
+
+        
+        <section class="demo-section">
+            <h2>Gradientes</h2>
+            <div class="gradiente-linear">Gradiente Linear</div>
+            <div class="gradiente-radial">Gradiente Radial</div>
+        </section>
+    </main>
+
+</body>
+</html>

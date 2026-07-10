@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Prático de Layout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/box_model.css') }}">
+</head>
+<body>
+
+    
+    <header class="header-fixed">
+        Meu Site - Cabeçalho Fixo
+    </header>
+
+
+    <button class="fixed-top-right">chat</button>
+    <button class="fixed-center-right">Ajuda</button>
+    <button class="fixed-bottom-right">Chat</button>
+
+    <main>
+        <section class="demo-section">
+            <h2>Banner Sticky</h2>
+            <div class="banner-sticky">
+                Banner que fica visível enquanto você rola a página
+            </div>
+            <p>Sticky mantém a posição relativa até um ponto, depois "gruda" no topo.</p>
+        </section>
+    
+        <section class="demo-section">
+            <h2>Cards</h2>
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Exemplo de conteúdo dentro de um card. Padding, border e margin aplicados.</p>
+                <button class="card-btn">Ação</button>
+            </div>
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Outro card com conteúdo diferente. Cada card está separado pela margin.</p>
+                <button class="card-btn">Ação</button>
+            </div>
+        </section>
+        
+
+
+
+        
+        <section class="demo-section">
+            <h2>Tooltip Absolute</h2>
+            <div class="tooltip-container">
+                Passe o mouse aqui
+                <span class="tooltip">Tooltip mostrando informações adicionais</span>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

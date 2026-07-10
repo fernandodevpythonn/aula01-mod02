@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Seletores CSS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/seletores.css') }}">
+</head>
+<body>
+
+    <h1>Exemplo de Seletores CSS</h1>
+
+    <section>
+        <h2>Seletores Básicos</h2>
+        <p>Seletores básicos permitem escolher elementos diretamente pelo nome da tag, classe ou id.</p>
+        <p class="vermelho">Exemplo de seletor de <strong>classe</strong> .vermelho</p>
+        <p class="azul">Exemplo de seletor de <strong>classe</strong> .azul</p>
+        <p id="destaque">Exemplo de seletor de <strong>id</strong> #destaque</p>
+    </section>
+
+    <section>
+        <h2>Seletores Combinados</h2>
+        <p>Selecionam elementos em relação a outros elementos na hierarquia do HTML.</p>
+        <div>
+            <p>Este parágrafo está dentro de uma <strong>div</strong> div p</p>
+        </div>
+
+        <ul>
+            <li>Item 1 linha ímpar</li>
+            <li>Item 2 linha par</li>
+            <li>Item 3 linha ímpar</li>
+            <li>Item 4 linha par</li>
+        </ul>
+
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </nav>
+    </section>
+
+    <section>
+        <h2>Pseudo-classes</h2>
+        <p>Pseudo-classes aplicam estilos em elementos com base em seu estado.</p>
+        <p>Exemplo de <strong>:hover</strong> em links (passe o mouse sobre os links acima).</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+        </form>
+        <p>Exemplo de <strong>:focus</strong> em campos de formulário.</p>
+        <p>Exemplo de <strong>:nth-child()</strong> nas listas.</p>
+    </section>
+
+    <section>
+        <h2>Pseudo-elementos</h2>
+        <p>Permitem adicionar conteúdo ou efeitos antes ou depois de um elemento.</p>
+        <h2>Pseudo-elemento antes ::before</h2>
+        <p>Pseudo-elemento depois ::after</p>
+    </section>
+
+    <section>
+        <h2>Especificidade</h2>
+        <p>Regras CSS podem se sobrepor dependendo da prioridade: elemento < classe < id < !important</p>
+        <div class="article-container">
+            <p>Exemplo de <strong>classe</strong> aplicando cor verde </p>
+        </div>
+        <div id="especial">
+            <p>Exemplo de <strong>id</strong> aplicando cor laranja</p>
+        </div>
+    </section>
+
+    <br>
+    <a href="/">Voltar para a página inicial</a>
+
+</body>
+</html>
