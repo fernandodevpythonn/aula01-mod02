@@ -1,11 +1,48 @@
 body{
-    background: linear-gradient(to right, red,blue);
+    background: linear-gradient(to right, red,rgb(255, 53, 53));
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: center;
+    padding: 0;
 }
 header{
-    height: 70px;
+    position: fixed;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.753);
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
+    z-index: 1000;
+    margin-bottom: 20px;
+}
+
+.card{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.733);
+    margin-bottom: 20px;
+}
+
+.card-btn{
+    position: relative;
+}
+
+.cards-section{
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    border: 1px solid black;
+}
+
+.banner-stick{
+    position:sticky;
+    top: 60px;
+    background-color: blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    z-index: 500;
 }
