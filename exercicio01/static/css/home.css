@@ -1,20 +1,17 @@
 body{
-    background: linear-gradient(to right, red,rgb(255, 53, 53));
+    background: linear-gradient(to bottom, rgb(117, 6, 6),red);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     text-align: center;
-    padding: 0;
 }
 header{
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(145, 142, 142, 0.616);
     text-align: center;
-    padding: 10px;
     z-index: 1000;
-    margin-bottom: 20px;
+    color: white;
 }
 
 .card{
@@ -32,17 +29,84 @@ header{
 
 .cards-section{
     padding: 20px;
+    position: relative;
     margin: 30px auto;
     max-width: 800px;
     border: 1px solid black;
+    padding: 10px;
 }
 
 .banner-stick{
     position:sticky;
-    top: 60px;
+    top: 80px;
+    width: 100%;
     background-color: blue;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     z-index: 500;
+}
+
+.banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 300px;
+    padding-top: 10px;
+}
+.botao{
+    position: fixed;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    right: 10px;
+    top: 400px;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px black;
+}
+.botao > p >  a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botao:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.tooltipe{
+    visibility: hidden;
+    width: 100px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.3s;
+}
+.container-tooltipe{
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.container-tooltipe:hover{
+    background-color: gray;
+  
+}
+
+.container-tooltipe:hover .tooltipe{
+    visibility: visible;
+    opacity: 1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
 }
