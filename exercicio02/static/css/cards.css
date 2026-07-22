@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(255, 177, 177);
+}
+header{
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.753);
+    padding: 10px;
+    text-align: center;
+}
+main{
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 70%;
+    background-color: rgba(128, 128, 128, 0.281);
+    box-shadow: 5px 5px 5px black;
+}
+.card{
+    max-width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.card > button:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
