@@ -6,12 +6,13 @@ class LoginController(BaseController):
         self.rotas = [
             ('/login','login',self.pagina_login),
             ('/entrar', 'entrar', self.entrar, ['POST']),
-            ('/logout', 'logout', self.logout)
+            ('/logout', 'logout', self.logout),
+            ('/cadastro','cadastro', self.cadastro),
+            ('/registrar','registrar', self.registrar, ['POST'])
         ]
         super().__init__(app)
 
-        self.usuario_correto = "fernando"
-        self.email_correto = "fernando@123"
+        self.usuarios = [{"email":"senac@gmail.com","senha":"12345"}]
 
     def pagina_login(self):
         return render_template("login/pagina_login.html")
@@ -33,15 +34,37 @@ class LoginController(BaseController):
         return render_template("basico_html/pagina_inicial.html")
         
     def entrar(self):
-        usuario = request.form.get("nome")
         email = request.form.get("email")
+        senha = request.form.get("senha")
 
-        if usuario == self.usuario_correto and email == self.email_correto:
+        usuario_valido = next((u for u in self.usuarios if u["email"] == email and u["senha"] == senha), None)
+
+        if usuario_valido:
             session["usuario_logado"] = True
             return redirect(url_for("home"))
         else:
-            erro = "usuario ou email inválido"
+            erro = "usuario ou senha incorretos"
             return render_template("login/pagina_login.html", erro = erro)
+
+    def registrar(self):
+        email = request.form.get("email")
+        senha = request.form.get("senha")
+
+        if not email or not senha:
+            erro = "Todos os campos devem ser preenchidos"
+            return render_template("login/cadastro.html", erro = erro)
+        
+        self.usuarios.append({
+            "email":email,
+            "senha":senha
+        })
+        sucesso = "cadastro realizado com sucesso!"
+        return render_template("login/cadastro.html", sucesso = sucesso)
+
+
+    def cadastro(self):
+        return render_template("login/cadastro.html")
+    
     def logout(self):
         session.clear()
         return redirect(url_for("login"))

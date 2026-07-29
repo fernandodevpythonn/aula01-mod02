@@ -17,18 +17,18 @@
             {% endif %}
             <form action="{{ url_for('entrar')}}" method="POST">
               <p>
-               <label for="nome">Nome: </label>
-              <input type="text" name="nome" id="nome">
+               <label for="email">email: </label>
+              <input type="email" name="email" id="email">
               </p>
               <p>
-                <label for="email">Email: </label>
-              <input type="email" name="email" id="nome">
+                <label for="senha">senha: </label>
+              <input type="password" name="senha" id="senha">
               </p>
              
               <br>
               <input type="submit" value="entrar">
+              <button><a href="/cadastro">Cadastrar</a></button>
             </form>
-            <p><a href="/">Página inicial</a></p>
         </section>
     </main>
 </body>
