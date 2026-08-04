@@ -8,5 +8,6 @@ LoginController(app)
 HTMLbasicocontroller(app)
 
 app.secret_key = "log_ex02"
+
 if __name__ == "__main__":
     app.run(debug=True)
