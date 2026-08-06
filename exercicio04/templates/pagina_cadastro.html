@@ -4,29 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../static/login.css">
-    <link rel="stylesheet" href="../static/global.css">
 </head>
 <body>
     <header>
         <h1>Página de cadastro</h1>
     </header>
     <main>
-        <form action="{{('cadastrar')}}" method="post">
-            <fieldset>Cadastro</fieldset>
+        <form action="" method="post">
             <p>
-                <label for="email">Email:</label>
+                <label for="email">Email: </label>
                 <input type="email" name="email" id="email" required>
             </p>
             <p>
-                <label for="senha">Senha:</label>
+                <label for="senha">Senha: </label>
                 <input type="password" name="senha" id="senha" required>
             </p>
-            <p>
-                <input type="submit" value="Cadastrar">
-                <button><a href="/login">Voltar</a></button>
-            </p>
-            
+            <input type="submit" value="Cadastrar">
         </form>
     </main>
 </body>

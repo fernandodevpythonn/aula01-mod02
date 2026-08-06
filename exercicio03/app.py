@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 HTMLbasicoController(app)
 LoginController(app)
+app.secret_key = "log_ex03"
 
 if __name__ == "__main__":
     app.run(debug=True)

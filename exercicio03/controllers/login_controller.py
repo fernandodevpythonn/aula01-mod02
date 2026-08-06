@@ -7,7 +7,8 @@ class LoginController(BaseController):
             ('/login','login',self.login),
             ('/loginpagina','loginpagina',self.pagina_login),
             ('/entrar','entrar',self.entrar,['POST']),
-            # ('/cadastrar','cadastrar',self.cadastrar,['POST'])
+            ('/logout','logout',self.logout),
+            ('/cadastrar','cadastrar',self.cadastrar,['POST'])
         ]
         super().__init__(app)
         self.usuarios = [{"email":"fernando@gmail.com","senha":"12345"}]
@@ -33,3 +34,23 @@ class LoginController(BaseController):
         if session.get("usuario_logado"):
             return redirect(url_for("home"))
         return render_template("pagina_login.html")
+    
+    def logout(self):
+        session.clear()
+        return redirect(url_for("login"))
+    
+    def cadastrar(self):
+        email = request.form.get("email")
+        senha = request.form.get("senha")
+
+        if not email or not senha:
+            erro = "erro, preencha todos os dados"
+            return render_template("/cadastro", erro = erro)
+        
+        self.usuarios.append({
+            "email": email,
+            "senha":senha
+        })
+
+        sucesso = "cadastro realizado! faça o login"
+        return render_template("pagina_login.html", sucesso = sucesso)
