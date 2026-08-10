@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+    <title>{% block title%}sistema de listas{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Página incial</h1>
+      </header>
+      <nav>
+        <ul>
+          <li>home</li>
+          <li><a href="/home01">exercicio01</a></li>
+          <li>Lista 02</li>
+          <li>Lista 03</li>
+          <li>Lista 04</li>
+          <li>Lista 05</li>
+        </ul>
+      </nav>
+      {% block content %}{% endblock %}
+</body>
+</html>
