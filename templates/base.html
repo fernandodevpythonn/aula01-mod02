@@ -11,16 +11,19 @@
     <header>
         <h1>Página incial</h1>
       </header>
-      <nav>
-        <ul>
-          <li>home</li>
-          <li><a href="/home01">exercicio01</a></li>
-          <li>Lista 02</li>
-          <li>Lista 03</li>
-          <li>Lista 04</li>
-          <li>Lista 05</li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a href="/" class="dropdown-btn">Home</a>
+        <div class="dropdown">
+          <a href="#" class="dropdown-btn">Lista 01</a>
+          <div class="dropdown-content">
+            <a href="/ex01">Exercicio 01</a>
+            <a href="/ex01">Exercicio 02</a>
+            <a href="/ex01">Exercicio 03</a>
+            <a href="/ex01">Exercicio 04</a>
+            <a href="/ex01">Exercicio 05</a>
+          </div>
+        </div>
+      </div>
       {% block content %}{% endblock %}
 </body>
 </html>
